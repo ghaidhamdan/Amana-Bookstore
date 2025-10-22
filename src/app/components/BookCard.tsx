@@ -94,7 +94,7 @@ const BookCard: React.FC<BookCardProps> = ({ book, onAddToCart }) => {
       {/* Book Information */}
       <div className="p-4">
         <Link href={`/book/${book.id}`} className="block cursor-pointer">
-          <h3 className="text-lg font-semibold text-gray-800 truncate hover:text-blue-600 transition-colors duration-200">{book.title}</h3>
+          <h3 className="text-lg font-semibold text-gray-800 truncate hover:text-green-600 transition-colors duration-200">{book.title}</h3>
           <p className="text-sm text-gray-600 mt-1">by {book.author}</p>
         </Link>
         
@@ -117,7 +117,7 @@ const BookCard: React.FC<BookCardProps> = ({ book, onAddToCart }) => {
         <div className="flex items-center justify-between mt-3">
           <p className="text-xl font-bold text-gray-900">${book.price.toFixed(2)}</p>
           {!book.inStock && (
-            <span className="text-xs text-red-600 font-medium">Out of Stock</span>
+            <span className="text-xs font-bold text-white bg-red-500 px-2 py-1 rounded-md">Out of Stock</span>
           )}
         </div>
         
@@ -138,8 +138,8 @@ const BookCard: React.FC<BookCardProps> = ({ book, onAddToCart }) => {
                 : showSuccess
                 ? 'bg-green-600 text-white cursor-pointer'
                 : isAddingToCart
-                ? 'bg-blue-400 text-white cursor-wait'
-                : 'bg-blue-600 text-white hover:bg-blue-700 cursor-pointer'
+                ? 'bg-green-400 text-white cursor-wait'
+                : 'bg-green-600 text-white hover:bg-green-700 cursor-pointer'
             }`}
           >
             {showSuccess ? (

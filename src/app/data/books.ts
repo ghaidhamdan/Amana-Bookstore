@@ -874,5 +874,26 @@ export const books: Book[] = [
     reviewCount: 16,
     inStock: true,
     featured: true,
-  }
+  } ,
+  {
+  id: '46',
+  title: 'Artificial General Intelligence: Concepts and Ethics',
+  author: 'Dr. Noor Al-Farouqi',
+  description: 'An exploration of the foundations, challenges, and ethical considerations of developing human-level artificial intelligence systems.',
+  price: 139.99,
+  image: '/images/book7.jpg',
+  isbn: '978-4678901234',
+  genre: ['Computer Science', 'Ethics'],
+  tags: ['AI', 'Ethics', 'Philosophy', 'Technology'],
+  datePublished: '2024-09-10',
+  pages: 672,
+  language: 'English',
+  publisher: 'Al-Kindi AI Research Center',
+  rating: 4.9,
+  reviewCount: 11,
+  inStock: true,
+  featured: true
+}
+
 ];
+
